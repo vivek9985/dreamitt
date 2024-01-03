@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800;900&display=swap");
+.seymour {
+  font-family: "Orbitron", sans-serif;
+}
+
 body {
-    font-family: '';
-    background-color: #0000006b;
+  background-color: #0000006b;
 }
