@@ -9,7 +9,6 @@ menuIcon.addEventListener("click", (event) => {
     y: 120,
     duration: 0.2,
     stagger: 0.1,
-    ease: "power4.out",
   });
   gsap.to("#text", {
     y: 0,
