@@ -5,6 +5,10 @@ menuIcon.addEventListener("click", (event) => {
     duration: 0.9,
     ease: "power4.out",
   });
+  gsap.to(".close-menu", {
+    rotate: 360,
+    duration: 1.2,
+  });
   gsap.from("#text", {
     y: 120,
     duration: 0.2,
@@ -23,5 +27,9 @@ menuClose.addEventListener("click", (event) => {
     width: 0,
     duration: 0.9,
     ease: "power4.in",
+  });
+  gsap.to(".close-menu", {
+    rotate: 0,
+    duration: 2,
   });
 });
