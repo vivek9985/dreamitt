@@ -1,42 +1,42 @@
 document.querySelector(".mobile-menu").addEventListener("click", (event) => {
-  gsap.to("#menu", {
-    width: "100%",
+  gsap.to("#mobile-menu", {
+    top: "0%",
     duration: 0.9,
     ease: "power4.out",
   });
-  gsap.to(".close-menu", {
-    rotate: 360,
-    duration: 1.2,
-  });
-  gsap.from("#text", {
-    y: 120,
-    duration: 0.2,
-    stagger: 0.1,
-  });
-  gsap.to("#text", {
-    y: 0,
-    duration: 0.2,
+  gsap.to("#menu-item", {
+    marginLeft: 0,
+    duration: 1,
+    opacity: 1,
     stagger: 0.1,
   });
 });
+document
+  .querySelector(".close-mobile-menu")
+  .addEventListener("click", (event) => {
+    gsap.to("#mobile-menu", {
+      top: "-100%",
+      duration: 0.9,
+      ease: "power4.out",
+    });
+    gsap.to("#menu-item", {
+      marginLeft: 160,
+      duration: 1,
+      opacity: 1,
+      stagger: 0.1,
+    });
+  });
+
 document.querySelector(".nav-icon").addEventListener("click", (event) => {
   gsap.to("#menu", {
     width: "100%",
     duration: 0.9,
     ease: "power4.out",
   });
-  gsap.to(".close-menu", {
-    rotate: 360,
-    duration: 1.2,
-  });
-  gsap.from("#text", {
-    y: 120,
-    duration: 0.2,
-    stagger: 0.1,
-  });
   gsap.to("#text", {
-    y: 0,
-    duration: 0.2,
+    marginBottom: 0,
+    duration: 1,
+    opacity: 1,
     stagger: 0.1,
   });
 });
@@ -48,8 +48,10 @@ menuClose.addEventListener("click", (event) => {
     duration: 0.9,
     ease: "power4.in",
   });
-  gsap.to(".close-menu", {
-    rotate: 0,
-    duration: 2,
+  gsap.to("#text", {
+    marginBottom: 40,
+    duration: 1,
+    opacity: 1,
+    stagger: 0.1,
   });
 });
