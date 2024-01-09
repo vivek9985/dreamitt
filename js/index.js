@@ -1,5 +1,25 @@
-const menuIcon = document.querySelector(".nav-icon");
-menuIcon.addEventListener("click", (event) => {
+document.querySelector(".mobile-menu").addEventListener("click", (event) => {
+  gsap.to("#menu", {
+    width: "100%",
+    duration: 0.9,
+    ease: "power4.out",
+  });
+  gsap.to(".close-menu", {
+    rotate: 360,
+    duration: 1.2,
+  });
+  gsap.from("#text", {
+    y: 120,
+    duration: 0.2,
+    stagger: 0.1,
+  });
+  gsap.to("#text", {
+    y: 0,
+    duration: 0.2,
+    stagger: 0.1,
+  });
+});
+document.querySelector(".nav-icon").addEventListener("click", (event) => {
   gsap.to("#menu", {
     width: "100%",
     duration: 0.9,
