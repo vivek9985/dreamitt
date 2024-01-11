@@ -15,7 +15,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-full mx-auto overflow-x-hidden select-none">
+  <body class="w-full mx-auto overflow-x-hidden">
     <header
       class="fixed px-5 md:px-12 py-3 w-full z-30 transition duration-700"
     >
@@ -273,7 +273,7 @@
     </header>
 
     <main class="w-full">
-      <section class="w-full flex flex-col lg:flex-row h-screen">
+      <section class="w-full flex flex-col lg:flex-row h-screen select-none">
         <div class="w-full h-2/3 lg:w-8/12 lg:h-screen">
           <img
             src="./assets/adult-adventure-clouds-1331395.jpg"
@@ -285,12 +285,12 @@
           class="font-bold absolute left-6 md:left-10 lg:left-10 xl:left-24 mt-28 sm:mt-12 lg:mt-20 z-10"
         >
           <h2
-            class="text-[70px] sm:text-[110px] md:text-[130px] lg:text-[170px] xl:text-[210px] text-white"
+            class="text-[70px] sm:text-[110px] md:text-[130px] lg:text-[150px] xl:text-[210px] text-white"
           >
             Dream it. <br />
           </h2>
           <h2
-            class="-mt-8 sm:-mt-16 md:-mt-20 lg:-mt-28 text-[#FFA891] text-[70px] sm:text-[110px] md:text-[130px] lg:text-[170px] xl:text-[210px]"
+            class="-mt-8 sm:-mt-16 md:-mt-20 lg:-mt-20 xl:-mt-32 text-[#FFA891] text-[70px] sm:text-[110px] md:text-[130px] lg:text-[150px] xl:text-[210px]"
           >
             Do it.
           </h2>
@@ -482,40 +482,199 @@
           </div>
         </div>
       </section>
+
       <section class="py-64 bg-home bg-no-reapet bg-center bg-cover"></section>
+
       <section class="w-10/12 mx-auto">
         <div class="border py-10"></div>
       </section>
 
-      <section class="bg-[#f7f7f8] py-20">
-        <div class="w-11/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section class="bg-[#f7f7f8] py-24 border-b-[1px] border-black">
+        <div
+          class="w-11/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center"
+        >
           <div class="px-10 py-12 bg-white">
             <img
-            class="w-2/5 mx-auto"
-            src="./assets/30-nachten-proberen.svg" alt="" />
+              class="w-[100px] h-[100px] mx-auto"
+              src="./assets/30-nachten-proberen.svg"
+              alt=""
+            />
             <h3 class="text-xl font-bold mt-4">30 nights 'trial sleep'</h3>
             <p class="mt-1">And a 10-year warranty after purchase</p>
           </div>
           <div class="px-10 py-12 bg-white">
             <img
-            class="w-2/5 mx-auto"
-            src="./assets/Bezorgen.svg" alt="" />
+              class="w-[100px] h-[100px] mx-auto"
+              src="./assets/Bezorgen.svg"
+              alt=""
+            />
             <h3 class="text-xl font-bold mt-4">Free home delivery</h3>
             <p class="mt-1">In the bedroom within 7 working days</p>
           </div>
           <div class="px-10 py-12 bg-white">
             <img
-            class="w-2/5 mx-auto"
-            src="./assets/Montage.svg" alt="" />
+              class="w-[100px] h-[100px] mx-auto"
+              src="./assets/Montage.svg"
+              alt=""
+            />
             <h3 class="text-xl font-bold mt-4">Free installation service</h3>
             <p class="mt-1">Expertly put together for you</p>
           </div>
-          
+        </div>
+      </section>
+
+      <section class="bg-[#f7f7f8] py-20 md:py-32 overflow-hidden">
+        <h1
+          class="text-9xl md:text-[150px] lg:text-[200px] font-black text-white whitespace-nowrap"
+        >
+          Dream it. Do it. Dream it. Do it. Dream it. Do it. Dream it. Do it.
+          Dream it. Do it. Dream it. Do it. Dream it. Do it. Dream it. Do it.
+        </h1>
+        <div class="mt-32">
+          <div
+            class="w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-1"
+          >
+            <div class="flex">
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center bg-blue-600 hover:bg-[#213fa2] duration-700 rounded-full px-4 pr-6 py-2.5 text-gray-100 font-bold group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-12 h-7 text-[#FFA891] mt-px group-hover:mr-2 group-hover:scale-x-150 duration-700"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                  <span class="text-base xl:text-lg font-black"
+                    >Discover your dream box</span
+                  >
+                </a>
+              </div>
+            </div>
+            <h2 class="text-[28px]">
+              A personally adjustable box spring. A perfect night's sleep is
+              required to make your dreams come true.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="discover-bg bg-no-reapet bg-center bg-cover">
+        <div class="bg-[#0538389a] py-20">
+          <h2 class="text-center text-2xl md:text-4xl font-bold text-white">
+            Create your own dream box
+          </h2>
+          <div class="flex justify-center mt-6">
+            <a
+              href="#"
+              class="flex items-center bg-white text-gray-700 duration-700 rounded-full px-8 py-2.5 font-bold group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-12 h-7 text-[#FFA891] mt-px group-hover:mr-2 group-hover:scale-x-150 duration-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              <span class="text-base lg:text-lg">Discover your Dreambox</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- <section>Footer</section> -->
+    <footer class="bg-[#2c4141]">
+      <div
+        class="w-[87%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-28"
+      >
+        <div>
+          <h2 class="text-[#FFA891] font-medium text-2xl md:text-4xl">
+            Dreamitt
+          </h2>
+        </div>
+        <ul class="text-[22px] space-y-3 mt-4">
+          <li>
+            <a href="#" class="text-[#FFA891] hover:text-[#ff5d42] duration-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-100 hover:text-[#ff5d42] duration-700"
+              >Dreambox</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-100 hover:text-[#ff5d42] duration-700"
+              >Our story</a
+            >
+          </li>
+        </ul>
+        <ul class="text-[22px] space-y-3 mt-4">
+          <li>
+            <a href="#" class="text-[#FFA891] hover:text-[#ff5d42] duration-700"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-100 hover:text-[#ff5d42] duration-700"
+              >Topics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-100 hover:text-[#ff5d42] duration-700"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="">
+          <h3 class="text-white font-bold text-xl">
+            Follow us on social media!
+          </h3>
+        </div>
+      </div>
+      <div class="w-full h-[1px] bg-gray-800"></div>
+      <div class="w-[87%] mx-auto flex items-center justify-between py-10">
+        <div>
+          <p class="text-[#9fb2b2]">
+            All rights reserved - Copyright® Dreamitt 2024 -
+            <span
+              ><a href="#" class="text-[#FFA891]">Privacy statement</a></span
+            >
+            -<span
+              ><a href="#" class="text-[#FFA891]"
+                >General terms and conditions</a
+              ></span
+            >
+            - Website by
+            <span><a href="#" class="text-[#FFA891]">Brndz</a></span>
+          </p>
+        </div>
+        <div>
+          <div class="text-[#FFA891] text-[10px]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
