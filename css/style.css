@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800;900&display=swap");
 .seymour {
   font-family: "Orbitron", sans-serif;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 9px;
@@ -13,4 +13,8 @@
   background: #ffa891;
   border: #ff6b45 solid 1px;
   background-clip: content-box;
+}
+
+.bg-home {
+  background-image: url(../assets/20200313-1467-lr.jpg);
 }
