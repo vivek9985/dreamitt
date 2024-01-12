@@ -1,3 +1,7 @@
+window.addEventListener("scroll", () => {
+  let header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 document.querySelector(".mobile-menu").addEventListener("click", (event) => {
   gsap.to("#mobile-menu", {
     top: "0%",

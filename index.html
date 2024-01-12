@@ -17,13 +17,13 @@
   </head>
   <body class="w-full mx-auto overflow-x-hidden">
     <header
-      class="fixed px-5 md:px-12 py-3 w-full z-30 transition duration-700"
+      class="fixed w-full top-0 left-0 px-5 py-5 md:px-12 z-30"
     >
       <div class="flex items-center justify-between">
         <!-- header first column -->
         <div class="hidden md:block w-1/3 text-gray-100 z-50">
           <div class="flex">
-            <a href="/" class="flex items-center gap-1 group">
+            <a href="/" class="flex items-center gap-1 group sticky-text">
               <span class="group-hover:text-[#FFA891] duration-700">
                 The Dreambox</span
               >
@@ -49,8 +49,8 @@
             <div
               class="flex flex-col items-center justify-center gap-1.5 hover:gap-1 group"
             >
-              <div class="w-6 h-0.5 bg-gray-200 group-hover:mt-px"></div>
-              <div class="w-6 h-0.5 bg-gray-200"></div>
+              <div class="w-6 h-0.5 bg-gray-200 group-hover:mt-px menu-icon"></div>
+              <div class="w-6 h-0.5 bg-gray-200 menu-icon"></div>
             </div>
           </div>
         </div>
@@ -58,14 +58,14 @@
         <div class="text-center w-1/3 z-50">
           <a
             href="/"
-            class="text-[22px] xl:text-[32px] font-bold text-[#FFA891]"
+            class="text-[22px] xl:text-[32px] font-bold text-[#FFA891] logo"
           >
             Dreamitt
           </a>
         </div>
         <!-- header third column -->
         <div class="w-1/3 flex items-center justify-end gap-5 md:gap-10 z-50">
-          <a href="" class="text-white lg:hidden">
+          <a href="#" class="text-white lg:hidden sticky-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -81,7 +81,7 @@
               />
             </svg>
           </a>
-          <a href="" class="text-white relative lg:hidden">
+          <a href="" class="text-white relative lg:hidden sticky-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -97,21 +97,21 @@
               />
             </svg>
             <span
-              class="bg-gray-800 absolute -right-2 -top-1 text-[9px] font-medium px-[5px] rounded-full"
+              class="bg-gray-800 absolute -right-2 -top-1 text-[9px] font-medium px-[5px] rounded-full cart"
               >0</span
             >
           </a>
-          <a href="" class="text-white hidden lg:block">login</a>
-          <a href="" class="text-white relative hidden lg:block"
+          <a href="" class="text-white hidden lg:block sticky-text">login</a>
+          <a href="" class="text-white relative hidden lg:block sticky-text"
             >Shopping cart<span
-              class="bg-gray-800 absolute -right-2 -top-1 text-[9px] font-medium px-[5px] rounded-full"
+              class="bg-gray-800 absolute -right-2 -top-1 text-[9px] font-medium px-[5px] rounded-full cart"
               >0</span
             ></a
           >
           <div class="cursor-pointer nav-icon hidden md:block">
             <div class="mt-1 space-y-1.5 hover:space-y-1 hover:duration-700">
-              <div class="w-6 h-0.5 bg-gray-200"></div>
-              <div class="w-6 h-0.5 bg-gray-200"></div>
+              <div class="w-6 h-0.5 bg-gray-200 menu-icon"></div>
+              <div class="w-6 h-0.5 bg-gray-200 menu-icon"></div>
             </div>
           </div>
         </div>
@@ -354,15 +354,24 @@
             </div>
           </div>
         </div>
-        <div class="hidden lg:block absolute bottom-10 left-[50%] group">
-          <div class="flex flex-col items-center justify-center gap-1">
-            <h2 class="text-white font-bold">Scroll</h2>
-            <div
-              class="w-6 h-6 flex items-center justify-center rounded-full bg-white group-hover:scale-125 group-hover:text-red-400 duration-700"
+        <div
+          class="hidden lg:block absolute bottom-10 left-[50%] translate-x-[-50%] group"
+        >
+          <a
+            href="#bottom"
+            class="flex flex-col items-center justify-center gap-1"
+          >
+            <h2
+              class="text-white text-lg font-bold group-hover:-translate-y-1 duration-700"
             >
-              <i class="fa-solid fa-chevron-down text-[#FFA891]"></i>
+              Scroll
+            </h2>
+            <div
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-white group-hover:scale-[1.2] duration-700"
+            >
+              <i class="fa-solid fa-chevron-down text-[#FFA891] text-xs"></i>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -487,7 +496,7 @@
 
       <section class="bg-[#f7f7f8] py-28">
         <div
-          class="w-full mx-auto lg:w-10/12 flex flex-col lg:flex-row gap-24 lg:gap-1 border-0 lg:border-[1px] border-black px-10 lg:px-0"
+          class="w-full mx-auto lg:w-11/12 flex flex-col lg:flex-row gap-24 lg:gap-1 border-0 lg:border-[1px] border-black px-10 lg:px-0"
         >
           <div
             class="w-full lg:w-1/2 py-2 lg:py-28 px-0 lg:px-16 border-b-0 lg:border-r-[1px] border-black"
@@ -530,8 +539,12 @@
               </a>
             </div>
           </div>
-          <div class="w-full lg:w-1/2 flex flex-col md:flex-row lg:flex-col text-center">
-            <div class="w-full h-auto lg:h-1/2 md:w-1/2 lg:w-full px-4 md:px-10 py-10 lg:py-16 border-t-[1px] lg:border-t-0 border-b-[1px] border-r-0 md:border-r-[1px] lg:border-r-0 border-black">
+          <div
+            class="w-full lg:w-1/2 flex flex-col md:flex-row lg:flex-col text-center"
+          >
+            <div
+              class="w-full h-auto lg:h-1/2 md:w-1/2 lg:w-full px-4 md:px-10 py-10 lg:py-16 border-t-[1px] lg:border-t-0 border-b-[1px] border-r-0 md:border-r-[1px] lg:border-r-0 border-black"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
@@ -598,7 +611,9 @@
               </svg>
               <p class="mt-10">Four comfort options, easy to adjust</p>
             </div>
-            <div class="w-full h-auto lg:h-1/2 md:w-1/2 lg:w-full px-10 py-10 lg:py-16 lg:py-16 border-t-0 md:border-t-[1px] lg:border-t-0 border-b-[1px] lg:border-b-0 border-black">
+            <div
+              class="w-full h-auto lg:h-1/2 md:w-1/2 lg:w-full px-10 py-10 lg:py-16 lg:py-16 border-t-0 md:border-t-[1px] lg:border-t-0 border-b-[1px] lg:border-b-0 border-black"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
@@ -1300,7 +1315,7 @@
       </section>
     </main>
 
-    <footer class="bg-[#2c4141]">
+    <footer id="bottom" class="bg-[#2c4141]">
       <div class="w-[87%] mx-auto grid grid-cols-4 gap-10 lg:gap-16 py-28">
         <div class="col-span-4 lg:col-span-1">
           <a href="#" class="text-[#FFA891] font-medium text-2xl md:text-4xl">

@@ -3,6 +3,10 @@
   font-family: "Orbitron", sans-serif;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -13,6 +17,24 @@
   background: #ffa891;
   border: #ff6b45 solid 1px;
   background-clip: content-box;
+}
+
+.sticky {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.sticky .sticky-text {
+  color: black;
+}
+.sticky .cart {
+  color: #ffffff;
+}
+
+.sticky .logo {
+  color: #ffa891;
+}
+.sticky .menu-icon {
+  background-color: black;
 }
 
 .bg-home {
